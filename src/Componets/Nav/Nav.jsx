@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ct from './../images/codelogo.png';
 import '../Nav/Nav.css';
 
 const Navbar = () => {
@@ -15,8 +14,6 @@ const Navbar = () => {
     { path: '/about', label: 'About Us' },
     { path: '/services', label: 'Service' },
     { path: '/project', label: 'Project' },
-    { path: '/team', label: 'Team' },
-    { path: '/blogs-right-sidebar', label: 'Blogs' },
     { path: '/contact', label: 'Contact' },
   ];
 
@@ -25,7 +22,7 @@ const Navbar = () => {
       <nav className='flex items-center justify-between max-w-screen-xl mx-auto h-full px-4 font-ui-sans-serif'>
         {/* Logo */}
         <div className='flex-shrink-0'>
-          <Link to='/logo'>Logo here</Link>
+          <Link to='/'>Logo here</Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -82,9 +79,12 @@ const Navbar = () => {
 
         {/* Join Us Button */}
         <div className='flex-shrink-0 hidden md:block'>
-          <button className='bg-[#008bd0] text-white px-6 py-2 text-lg rounded-lg'>
-            Join Us
-          </button>
+          <Link
+            to={'/contact'}
+            className='bg-[#008bd0] text-white px-6 py-2 text-lg rounded-lg'
+          >
+            Contact Us
+          </Link>
         </div>
       </nav>
     </header>
