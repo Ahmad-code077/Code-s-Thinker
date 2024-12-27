@@ -1,0 +1,16 @@
+.swiper-button-next:after, .swiper-rtl {
+color: rgb(243, 181, 65);
+}
+.swiper-button-prev:after, .swiper-rtl{
+    color: rgb(243, 181, 65);
+}
+
+
+@media screen and (max-width:768px) {
+    .swiper-button-next:after, .swiper-rtl {
+            display: none;
+        }
+        .swiper-button-prev:after, .swiper-rtl{
+         display: none; 
+        }
+}
