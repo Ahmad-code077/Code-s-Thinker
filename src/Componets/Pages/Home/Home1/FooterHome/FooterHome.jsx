@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../../../images/logo.jpg';
 import {
   FaFacebookF,
   FaTwitter,
@@ -16,14 +17,14 @@ const FooterHome = () => {
             {/* About Us Section */}
             <div className='lg:w-1/4 md:w-1/2 px-4 mb-8 lg:mb-0'>
               <div className='footer-about'>
-                <Link className='footer-logo' to='/'>
-                  logo here
-                </Link>
-                <p className='mt-4 text-sm'>
+                <div className='flex-shrink-0 w-16 h-16'>
+                  <Link to='/'>
+                    <img src={logo} alt='Sky innovation logo' />
+                  </Link>
+                </div>
+                <p className=' text-sm'>
                   We offer a range of cutting-edge web development and software
                   solutions tailored to meet the specific needs of our clients.
-                  Our team of experienced developers, designers, and strategists
-                  works collaboratively with clients to deliver.
                 </p>
                 <ul className='flex mt-4 space-x-4'>
                   <Link to='/' className='hover:'>
@@ -39,7 +40,7 @@ const FooterHome = () => {
                     <FaYoutube />
                   </Link>
                 </ul>
-                <form className='flex flex-col sm:flex-row mt-5 gap-2'>
+                {/* <form className='flex flex-col sm:flex-row mt-5 gap-2'>
                   <input
                     type='email'
                     className='flex-1 px-4 py-1 mb-2 sm:mb-0 border border-gray-600 rounded-md text-black'
@@ -51,7 +52,7 @@ const FooterHome = () => {
                   <button className='bg-[#008bd0] py-1 px-4 rounded-md text-white transition'>
                     Subscribe
                   </button>
-                </form>
+                </form> */}
               </div>
             </div>
             {/* Company Section */}
@@ -97,14 +98,13 @@ const FooterHome = () => {
               <div className='footer-list'>
                 <h5 className='text-lg font-semibold mb-4'>Contact Info</h5>
                 <ul className='mb-4 flex flex-col gap-1'>
-                  <span className='font-semibold'>Address ...</span>
-                  <span className='font-semibold'>Phone:</span>
-                  <Link to='tel:03483873980' className='hover:'>
-                    03483873980
-                  </Link>
-                  <span className='font-semibold'>Email:</span>
-                  <Link to='mailto:info@skyinnovations.com' className='hover:'>
-                    info@skyinnovations.com
+                  <span className='font-semibold'>
+                    Bin Dasmal Building, Al Quoz Industrial 1 Dubai, UAE
+                  </span>
+
+                  <span className=' mt-2 font-semibold'>Email:</span>
+                  <Link to='mailto:support@ideatech.ae' className='hover:'>
+                    support@ideatech.ae{' '}
                   </Link>
                 </ul>
               </div>

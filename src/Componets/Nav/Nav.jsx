@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../Nav/Nav.css';
+import logo from '../images/logo.jpg';
+import ShimmerButton from '../Button/ShimmerButton';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +23,10 @@ const Navbar = () => {
     <header className='bg-[#fafafa] h-20 sticky z-40 top-0 shadow-md p-3'>
       <nav className='flex items-center justify-between max-w-screen-xl mx-auto h-full px-4 font-ui-sans-serif'>
         {/* Logo */}
-        <div className='flex-shrink-0'>
-          <Link to='/'>Logo here</Link>
+        <div className='flex-shrink-0 w-20 h-20'>
+          <Link to='/'>
+            <img src={logo} alt='Sky innovation logo' />
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -68,7 +72,7 @@ const Navbar = () => {
                 <Link
                   onClick={() => setIsOpen(false)}
                   to={path}
-                  className='nav-link flex items-center  py-2 md:py-0 hover:text-[#008bd0]'
+                  className='nav-link flex items-center  py-2 md:py-0 hover:text-[#008bd0] text-lg font-semibold'
                 >
                   {label}
                 </Link>
@@ -79,11 +83,8 @@ const Navbar = () => {
 
         {/* Join Us Button */}
         <div className='flex-shrink-0 hidden md:block'>
-          <Link
-            to={'/contact'}
-            className='bg-[#008bd0] text-white px-6 py-2 text-lg rounded-lg'
-          >
-            Contact Us
+          <Link to={'/contact'} className='bg-[#008bd0] text-white'>
+            <ShimmerButton text={'Contact us'} />
           </Link>
         </div>
       </nav>

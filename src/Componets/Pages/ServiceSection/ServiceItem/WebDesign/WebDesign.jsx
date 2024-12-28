@@ -95,12 +95,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quo
-        reprehenderit veritatis nam laboriosam, modi placeat aliquid eum maiores
-        porro odio illum iste molestias sapiente, sed voluptatem deleniti
-        tenetur expedita!
-      </p>
     </section>
   );
 };

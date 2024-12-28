@@ -6,19 +6,19 @@ import 'aos/dist/aos.css';
 
 const services = [
   {
-    icon: <FaCogs className='text-4xl text-blue-500 mr-4 h-24 w-20' />,
+    icon: <FaCogs className='text-4xl text-[#008bd0] mr-4 h-24 w-20' />,
     title: 'IT Solutions',
     description:
-      'CodeThinker is your ultimate partner in navigating the complexities of IT challenges. This feature is designed to offer tailored solutions,',
+      'Sky Innovations offers a wide range of IT services designed to streamline business operations, improve productivity, and optimize technology performance for clients across various industries.',
     link: '#0',
   },
   {
     icon: (
-      <FaDigitalTachograph className='text-4xl text-blue-500 mr-4 h-24 w-20' />
+      <FaDigitalTachograph className='text-4xl text-[#008bd0] mr-4 h-24 w-20' />
     ),
     title: 'Digital Solutions',
     description:
-      'CodeThinker is your gateway to innovative digital solutions that drive progress and efficiency in a rapidly evolving technological.',
+      'Sky Innovations provides cutting-edge digital solutions that empower businesses to stay ahead of the competition by embracing new technologies and improving operational efficiency.',
     link: '#0',
   },
 ];
@@ -51,7 +51,7 @@ const ServicesCategory = () => {
                 className='block p-6 border border-[#008bd0] rounded-lg hover:shadow-lg  transition duration-300  '
               >
                 <div className='flex items-center gap-5'>
-                  <LuSettings className='text-8xl text-[#008bd0]' />
+                  {service?.icon}
                   <div className='services-single-category-info'>
                     <h3 className='text-2xl font-semibold text-white'>
                       {service.title}

@@ -20,11 +20,13 @@ const ContactForm = () => {
                 className='w-full h-auto mb-4 rounded-md'
               />
               <p className='text-gray-600 mb-4'>
-                We provide estimates by phone, email, or at your home. The
-                estimate is completely free! Fill out the form, call us{' '}
-                <span className='text-[#008bd0]'>+707 555-321</span> or{' '}
-                <span className='text-[#008bd0]'>random@example.com</span>, and
-                leave your telephone number and home address.
+                We provide free estimates via email or on-site visits. Our
+                estimates are completely free of charge! Simply fill out the
+                form or reach out to us at{' '}
+                <a href='mailto:support@ideatech.ae' className='text-[#008bd0]'>
+                  support@ideatech.ae
+                </a>
+                , and provide your contact details and address.
               </p>
               <p className='text-gray-600'>
                 We look forward to hearing from you!
@@ -100,14 +102,14 @@ const ContactForm = () => {
 
       <div className='w-full h-96 mt-20 overflow-hidden rounded-lg shadow-lg'>
         <iframe
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1322583.408894594!2d-102.14199186434853!3d39.651402412422705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877496a0a13c3aa3%3A0xde429e634a338207!2sSt%20Francis%2C%20KS%2067756%2C%20USA!5e0!3m2!1sen!2sbd!4v1705036980615!5m2!1sen!2sbd'
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55866.687516542006!2d55.1628175716358!3d25.128809467448605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6bdae09bddcb%3A0x615f41be25b33bae!2sBin%20Dasmal!5e0!3m2!1sen!2sbd!4v1735386942576!5m2!1sen!2sbd'
           width='100%'
-          height='100%'
-          style={{ border: '0' }}
+          height='450'
+          style={{ border: 0 }}
           allowFullScreen=''
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
-          title='Google Map'
+          title='Bin Dasmal Location'
         ></iframe>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ShimmerButton from '../../../../Button/ShimmerButton';
 
 const ConsultationSection = () => {
   return (
@@ -12,11 +13,8 @@ const ConsultationSection = () => {
             <p className=' mb-6'>
               Free Consultation About Our IT Solutions For Your Business
             </p>
-            <a
-              href='tel:080707555321'
-              className='bg-[#008bd0] text-white  py-2 px-6   rounded-md transition'
-            >
-              Let’s Talk Now
+            <a href='mailto:support@ideatech.ae' className=''>
+              <ShimmerButton text={'Let’s Talk Now'} />
             </a>
           </div>
         </div>

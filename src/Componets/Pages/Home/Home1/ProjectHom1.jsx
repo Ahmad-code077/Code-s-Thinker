@@ -8,6 +8,7 @@ import work6 from '../../../images/work-6.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
+import ShimmerButton from '../../../Button/ShimmerButton';
 
 const projectData = [
   {
@@ -79,12 +80,8 @@ const ProjectHom1 = () => {
           ))}
         </div>
         <div className='text-center mt-8'>
-          <Link
-            to={'/project'}
-            className='btn btn-primary bg-[#008bd0] text-white py-3 px-6 rounded-lg hover:bg-[#3c85aa]'
-            href='#0'
-          >
-            View All Projects
+          <Link to={'/project'} className=' ' href='#0'>
+            <ShimmerButton text={'View All Projects'} />
           </Link>
         </div>
       </div>
